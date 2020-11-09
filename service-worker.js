@@ -2,7 +2,9 @@ const cacheName = 'pwa-v1'
 const assets = [
     '/',
     '/index.html',
-    '/js/index.js'
+    '/js/index.js',
+    '/assets/biscuits_and_jam192x192.JPG',
+    '/assets/pumpkin_muffins512x512.JPG'
 ]
 self.addEventListener('install', event => {
     console.log('service-worker__installing')

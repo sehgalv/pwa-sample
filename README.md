@@ -45,6 +45,7 @@ Steps to get started with an app progressive:
 - add service worker... this is where the magic happens and adds all the cool functionality of PWA
 	- service worker caches data & servers content offline
 	- can send push notification through service worker
+	- must be on https... can host on netlify, or github pages for free
 
 ## REFERENCES:
 https://web.dev/what-are-pwas/

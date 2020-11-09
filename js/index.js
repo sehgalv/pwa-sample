@@ -1,10 +1,20 @@
 const showInternetAvailabilityText = () => {
-    const formatDate = (new Date()).toDateString();
-    const selectElement = document.getElementById('date');
-    selectElement.innerHTML = formatDate;
+    const formatDate = (new Date()).toDateString()
+    const selectedElement = document.getElementById('date')
+    selectedElement.innerHTML = formatDate
 }
 
 document.addEventListener('DOMContentLoaded', showInternetAvailabilityText)
+
+window.addEventListener('offline', () => {
+  const selectedElement = document.getElementById('header')
+  selectedElement.innerText = 'You are offline, please turn on wifi.'
+})
+
+window.addEventListener('online', () => {
+  const selectedElement = document.getElementById('header')
+  selectedElement.innerText = 'You are online, turn off wifi to view alternate text!'
+})
 
 if ('serviceWorker' in navigator) {
     window.addEventListener("load", () => 
