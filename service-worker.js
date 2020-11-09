@@ -11,8 +11,8 @@ self.addEventListener('install', event => {
     )
 })
 
-self.addEventListener("fetch", event => {
-    console.log('service-worker__fetched-resource__'+e.request.url);
+self.addEventListener('fetch', event => {
+    console.log(`service-worker__fetched-resource__${event.request.url}`);
     event.respondWith(
       caches.match(event.request).then(res => res || fetch(event.request))
     )
