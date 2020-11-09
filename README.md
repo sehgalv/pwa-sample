@@ -50,3 +50,8 @@ Steps to get started with an app progressive:
 ## REFERENCES:
 https://web.dev/what-are-pwas/
 https://www.simicart.com/blog/progressive-web-apps-examples/
+https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/
+https://web.dev/add-manifest/
+https://developers.google.com/web/fundamentals/primers/service-workers
+https://docs.netlify.com/site-deploys/overview/#branch-deploy-controls
+https://v2.14islands.com/blog/2017/01/19/progressive-web-app-from-scratch/
