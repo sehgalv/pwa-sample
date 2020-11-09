@@ -1,7 +1,7 @@
 const showInternetAvailabilityText = () => {
     const formatDate = (new Date()).toDateString()
     const selectedElement = document.getElementById('date')
-    selectedElement.innerHTML = formatDate
+    selectedElement.innerHTML = `Last Online: ${formatDate}`
 }
 
 document.addEventListener('DOMContentLoaded', showInternetAvailabilityText)
