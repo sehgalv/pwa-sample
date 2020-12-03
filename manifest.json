@@ -5,7 +5,8 @@
 		{
 			"src": "assets/rose_almond_cookies64x64.JPG",
 			"type": "image/png",
-			"sizes": "64x64 32x32 24x24 16x16"
+			"sizes": "64x64 32x32 24x24 16x16",
+			"purpose": "maskable"
 		},
 		{
 			"src": "assets/biscuits_and_jam192x192.JPG",

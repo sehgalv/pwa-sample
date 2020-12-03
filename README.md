@@ -42,10 +42,32 @@ Steps to get started with an app progressive:
 	- index.html & add javascript index script tag
 - Add manifest.json & add link tag with manifest.json
 	- need to play around with possible options
+	- short_name -> appears under the icon
+	- icons -> to accomadate different OS
+	splash screen (when loading the page)
+	- full name is used
+	- background color used here
+	- start_url -> index.html page
+	- display -> full screen, standalone, etc
+		(show url bar, not show it, etc)
+	- orientation -> landscape, portrait
+	- theme color 
 - add service worker... this is where the magic happens and adds all the cool functionality of PWA
 	- service worker caches data & servers content offline
 	- can send push notification through service worker
 	- must be on https... can host on netlify, or github pages for free
+	- or on http web server on localhost
+- install prompt
+	- REQ: needs manifest with 192x192 icon + work offline
+
+How PWA works?
+
+cache first strategy
+browser (calls) -> service worker (checks) -> cache 
+	If present in cache
+	-> returns back to browser
+	If not present
+	-> makes network call
 
 ## REFERENCES:
 https://web.dev/what-are-pwas/
